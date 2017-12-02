@@ -2,6 +2,12 @@ body{
 	color: #777777;
 	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+#top-left{
+  float: left;
+}
+#top-right{
+  float: right;
+}
 .title{
   /*Site Headings*/
   font-family: 'Georgia', Times, Times New Roman, serif;
@@ -60,6 +66,11 @@ body{
 	background-color: #ffffff;
 	border-bottom: 1px solid #cccccc;
 	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+#header::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 .gray-line{
   	padding-bottom: 20px;
