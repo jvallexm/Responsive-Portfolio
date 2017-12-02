@@ -7,30 +7,37 @@ body{
 }
 #top-right{
   float: right;
+  margin-right: 50px;
 }
 .title{
   /*Site Headings*/
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 #main{
+  padding: 30px 0px 30px 0px;
   background-image: url(../images/regal.png);
 }
 #about{
 	margin-top: 25px;
 }
 #the-middle{
-  padding: 30px;
-  width: 960px;
+  max-width: 970px;
 }
+
 #the-middle::after {
   content: "";
   display: table;
   clear: both;
 }
+.text-left{
+  text-align: left;
+}
 .center{
 	text-align: center;
 }
 #content{
+
+  text-align: left;
   padding: 30px;
 	width: 590px;
 	border: 1px solid #dddddd;
@@ -46,12 +53,11 @@ body{
 	margin-top: 10px;
 }
 #sidebar{
-  margin-left: 20px;
-  padding: 20px;
+  padding: 15px;
 	width: 270px;
 	border: 1px solid #dddddd;
 	background-color: #ffffff;
- 	height: 180px;
+ 	min-height: 100px;
   float:right;
 }
 .bar{
@@ -83,10 +89,12 @@ body{
 	color: white !important;
 }
 #my-name{
+    margin-left: 80px;
     width: 300px;
     padding: 20px;
 }
 .from-top{
+  font-size: 200%;
 	margin-top: 10px;
 }
 .teal{
