@@ -162,26 +162,45 @@ button{
   margin-bottom: 45px;
 }
 
+.rel{
+  position: relative;
+  width: 48%;
+}
+.row{
+  margin-top: 20px;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-bottom: 10px;
+}
 .project{
   /*Each project*/
   height: 180px;
-  width: 250px;
+  width: 100%;
 }
-
+.proj-left{
+  float: left;
+}
+.proj-right{
+  float: right;
+}
 .obi{
   /* Strip over each project */
+  text-align: center;
   position: absolute;
-  width: 250px;
-  padding-top: 16px;
-  padding-bottom: 8px;
+  width: 100%;
+  padding-top: 21px;
+  padding-bottom: 16px;
   z-index: 1;
-  margin-top: -65px;
+  margin-top: -70px;
 }
 
 /* Viewport Styling */
 
 @media screen and (max-width: 980px) {
- 
+  
   #top-left{
     margin-left: 10%;
   }
@@ -209,10 +228,32 @@ button{
     float: none;
     margin-bottom: 10px;
   }
+  .proj-left,.proj-right{
+    float: none;
+    margin-bottom: 20px;
+  }
+  .row{
+    margin-top: 0px;
+  }
+  .row::after{
+    margin-bottom: 0px;
+  }
+  .gray-line{
+    margin-bottom: 20px;
+  }
+  .rel{
+    width:100%;
+  }
+  .project{
+    height: 75%;
+  }
 }
 
 @media screen and (max-width: 768px) {
 
+  body{
+    color: blue !important;
+  }
   #top-left{
     margin-left: 5%;
   }
@@ -237,6 +278,25 @@ button{
     width: 150px;
     float: left;
     margin-right: 20px;
+  }
+  .proj-left{
+    float: left;
+  }
+  .proj-right{
+    float: right;
+  }
+  .row{
+    margin-top: 0px;
+  }
+  .row::after{
+  }
+  .gray-line{
+  }
+  .rel{
+    width:49%;
+  }
+  .project{
+    height: 180px;
   }
 }
 
@@ -270,5 +330,24 @@ button{
   }
   a{
     margin: 0px 15px 0px 15px;
+  }
+  .proj-left,.proj-right{
+    float: none;
+    margin-bottom: 20px;
+  }
+  .row{
+    margin-top: 0px;
+  }
+  .row::after{
+    margin-bottom: 0px;
+  }
+  .gray-line{
+    margin-bottom: 20px;
+  }
+  .rel{
+    width:100%;
+  }
+  .project{
+    height: 75%;
   }
 }
